@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Chapter5Chalange</string>
+    <string name="logo_splash">logo_splash</string>
+    <string name="logo_load">logo_load</string>
+</resources>
