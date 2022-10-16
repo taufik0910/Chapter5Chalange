@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.Page3aFragment">
+
+    <ImageView
+        android:id="@+id/img_image1"
+        android:layout_width="192dp"
+        android:layout_height="214dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/img_page3"
+        android:src="@drawable/landing_page3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/itim"
+        android:gravity="center"
+        android:text="@string/page2_desc1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="nama"
+        android:hint="@string/nama"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="LabelFor" />
+
+
+</LinearLayout>

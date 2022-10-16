@@ -2,4 +2,14 @@
     <string name="app_name">Chapter5Chalange</string>
     <string name="logo_splash">logo_splash</string>
     <string name="logo_load">logo_load</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_play">play</string>
+    <string name="page1_desc1">Bermain suit melawan</string>
+    <string name="page1_desc2">Sesama Pemain</string>
+    <string name="img_page1">img_page1</string>
+    <string name="page2_desc1">Bermain Suit Melawan</string>
+    <string name="page2_desc2">komputer</string>
+    <string name="img_page3">img_page3</string>
+    <string name="nama">nama</string>
 </resources>
