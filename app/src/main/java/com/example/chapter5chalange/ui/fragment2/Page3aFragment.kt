@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.chapter5chalange.R
 import com.example.chapter5chalange.databinding.FragmentPage3aBinding
+import com.google.android.material.snackbar.Snackbar
 
 
 class Page3aFragment : Fragment(), View.OnClickListener {
@@ -36,7 +37,6 @@ class Page3aFragment : Fragment(), View.OnClickListener {
             val value = binding.etName.text.toString()
             bundle.putString(HomeFragment.EXSTRA_NAME, value)
             homeFragment.arguments = bundle
-
 
             fragmentManager.beginTransaction().apply {
                 replace(R.id.fm_2, homeFragment, HomeFragment::class.java.simpleName)
