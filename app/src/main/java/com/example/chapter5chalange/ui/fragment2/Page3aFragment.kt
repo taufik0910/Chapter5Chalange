@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.chapter5chalange.R
 import com.example.chapter5chalange.databinding.FragmentPage3aBinding
-import com.google.android.material.snackbar.Snackbar
 
 
 class Page3aFragment : Fragment(), View.OnClickListener {
@@ -32,7 +31,6 @@ class Page3aFragment : Fragment(), View.OnClickListener {
         if (v?.id == R.id.btn_pg3) {
             val homeFragment = HomeFragment()
             val fragmentManager = parentFragmentManager
-
             val bundle = Bundle()
             val value = binding.etName.text.toString()
             bundle.putString(HomeFragment.EXSTRA_NAME, value)

@@ -29,10 +29,11 @@
         android:layout_marginTop="250dp"
         android:layout_marginBottom="5dp"
         android:fontFamily="@font/itim"
-        android:text="@string/ply_user"
+        tools:text="Pemain"
         android:textColor="@color/antah2"
         android:textSize="25sp"
         android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/txt_com"
@@ -44,7 +45,6 @@
         android:layout_marginTop="249dp"
         android:layout_marginEnd="50dp"
         android:layout_toStartOf="@id/tx_pemain"
-        android:layout_toLeftOf="@+id/tx_pemain"
         android:fontFamily="@font/itim"
         android:gravity="center_horizontal"
         android:text="@string/ply_com"
@@ -106,8 +106,9 @@
         android:fontFamily="@font/itim"
         android:rotation="-15"
         android:text="@string/vs"
+        android:gravity="center"
         android:textColor="@color/red"
-        android:textSize="60sp" />
+        android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/com_batu"

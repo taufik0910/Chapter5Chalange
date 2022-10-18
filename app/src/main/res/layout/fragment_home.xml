@@ -18,6 +18,17 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/tv_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/itim"
+        android:textColor="@color/white"
+        android:textSize="0sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="nama1" />
+
     <ImageView
         android:id="@+id/img_image1"
         android:layout_width="169dp"

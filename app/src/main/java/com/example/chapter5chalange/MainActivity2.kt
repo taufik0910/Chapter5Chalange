@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.example.chapter5chalange.ui.fragment2.Page3aFragment
 
 class MainActivity2 : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -15,6 +16,9 @@ class MainActivity2 : AppCompatActivity() {
         if (fragment !is Page3aFragment) {
             fragmentManager.beginTransaction()
                 .add(R.id.fm_2, page3aFragment, Page3aFragment::class.java.simpleName).commit()
+
+
         }
+
     }
 }

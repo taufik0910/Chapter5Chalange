@@ -42,7 +42,9 @@ class HomeFragment : Fragment(), View.OnClickListener {
             val name = arguments?.getString(EXSTRA_NAME)
             binding.tvName.text = "$name VS Pemain"
             binding.tvName2.text = "$name VS Com"
-            Snackbar.make(view, "SELAMAT DATANG $name ", Snackbar.LENGTH_SHORT).show()
+            binding.tvHide.text = name
+            Snackbar.make(view, "SELAMAT DATANG $name ", Snackbar.LENGTH_SHORT)
+                .setAction("tutup") {}.show()
 
         }
         binding.imgImage1.setOnClickListener(this)
@@ -53,15 +55,22 @@ class HomeFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         val comFragment = ComFragment()
         val playerFragment = PlayerFragment()
+        val bundle = Bundle()
+        val value = binding.tvHide.text.toString()
         val fragmentManager = parentFragmentManager
-        if (v?.id == R.id.img_image1) {
+        if (v?.id == R.id.img_image2) {
+            bundle.putString(ComFragment.EXSTRA_NAME, value)
+            comFragment.arguments = bundle
             fragmentManager.beginTransaction().apply {
                 replace(R.id.fm_2, comFragment, ComFragment::class.java.simpleName)
                 addToBackStack(null)
                 commit()
             }
         }
-        if (v?.id == R.id.img_image2) {
+        if (v?.id == R.id.img_image1) {
+            bundle.putString(PlayerFragment.EXSTRA_NAME, value)
+            playerFragment.arguments = bundle
+
             fragmentManager.beginTransaction().apply {
                 replace(R.id.fm_2, playerFragment, PlayerFragment::class.java.simpleName)
                 addToBackStack(null)
