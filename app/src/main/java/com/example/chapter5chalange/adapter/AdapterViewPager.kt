@@ -1,4 +1,4 @@
-package com.example.chapter5chalange.ui.fragment
+package com.example.chapter5chalange.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

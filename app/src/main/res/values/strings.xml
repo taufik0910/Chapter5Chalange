@@ -12,4 +12,8 @@
     <string name="page2_desc2">komputer</string>
     <string name="img_page3">img_page3</string>
     <string name="nama">nama</string>
+    <string name="next">next</string>
+    <string name="homepage1">PILIH LAWAN MU</string>
+    <string name="HomePage2">Erwin VS Pemain</string>
+    <string name="HomePage3">Erwin VS CPU</string>
 </resources>

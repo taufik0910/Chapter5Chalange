@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.fragment.Page3aFragment">
+    tools:context=".ui.fragment2.Page3aFragment">
 
     <ImageView
         android:id="@+id/img_image1"
@@ -29,15 +29,27 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/et_simple"
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:autofillHints="nama"
         android:hint="@string/nama"
         android:inputType="text"
         android:minHeight="48dp"
         tools:ignore="LabelFor" />
+
+    <ImageView
+        android:id="@+id/btn_pg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_next"
+        android:contentDescription="@string/next" />
 
 
 </LinearLayout>
