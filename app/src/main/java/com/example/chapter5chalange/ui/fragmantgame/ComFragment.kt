@@ -1,4 +1,4 @@
-package com.example.chapter5chalange.ui.fragment1
+package com.example.chapter5chalange.ui.fragmantgame
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,15 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.chapter5chalange.R
 
-// T
-class Page1Fragment : Fragment() {
+//
+class ComFragment : Fragment() {
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_page1, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_com, container, false)
     }
 
 }
