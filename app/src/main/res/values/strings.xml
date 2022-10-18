@@ -13,7 +13,14 @@
     <string name="img_page3">img_page3</string>
     <string name="nama">nama</string>
     <string name="next">next</string>
+    <string name="ctnrefresh">refresh</string>
+    <string name="vs">VS</string>
+    <string name="batu">Batu</string>
+    <string name="kertas">Kertas</string>
+    <string name="gunting">Gunting</string>
+    <string name="ply_com">COM</string>
     <string name="homepage1">PILIH LAWAN MU</string>
     <string name="HomePage2">Erwin VS Pemain</string>
     <string name="HomePage3">Erwin VS CPU</string>
+    <string name="ply_user">pemain</string>
 </resources>
