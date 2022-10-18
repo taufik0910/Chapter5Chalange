@@ -20,7 +20,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     private lateinit var binding: FragmentHomeBinding
 
     companion object {
-        val EXSTRA_NAME = "extra name"
+        const val EXSTRA_NAME = "extra name"
 
     }
 
@@ -47,7 +47,6 @@ class HomeFragment : Fragment(), View.OnClickListener {
         }
         binding.imgImage1.setOnClickListener(this)
         binding.imgImage2.setOnClickListener(this)
-
 
     }
 

@@ -10,12 +10,13 @@
         android:id="@+id/img_load"
         android:layout_width="171dp"
         android:layout_height="183dp"
-        android:contentDescription="@string/logo_load"
         android:layout_marginTop="80dp"
+        android:contentDescription="@string/logo_load"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/img_logo"
