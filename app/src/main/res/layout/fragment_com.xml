@@ -4,6 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragmantgame.ComFragment">
+    <FrameLayout
+        android:id="@+id/fm_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
 
     <ImageView
         android:id="@+id/img_load"

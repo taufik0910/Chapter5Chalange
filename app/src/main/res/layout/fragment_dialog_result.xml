@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui."
-    android:layout_height="match_parent">
+    tools:context=".ui.dialog.DialogResultFragment">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,36 +20,38 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="dialog_user"
         android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="32sp" />
+        android:text="dialog_user"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hasil"
         android:gravity="center"
+        android:text="hasil"
         android:textSize="50sp" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_main_lagi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Main Lagi"
-        app:cornerRadius="8dp"
         android:backgroundTint="#8B48B8"
-        android:textSize="20sp" />
+        android:text="Main Lagi"
+        android:textSize="20sp"
+        app:cornerRadius="8dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Kembali ke menu "
-        app:cornerRadius="8dp"
         android:backgroundTint="#CA8671"
-        android:textSize="20sp" />
+        android:text="Kembali ke menu "
+        android:textSize="20sp"
+        app:cornerRadius="8dp" />
 
 </LinearLayout>

@@ -1,19 +1,21 @@
 package com.example.chapter5chalange.ui.fragmantgame
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.DialogFragment
 import com.bumptech.glide.Glide
 import com.example.chapter5chalange.R
 import com.example.chapter5chalange.databinding.FragmentComBinding
 import com.example.chapter5chalange.logic.LogicGame
 import com.example.chapter5chalange.logic.ResultCallback
+import com.example.chapter5chalange.ui.fragmantgame.PlayerFragment.Companion.EXSTRA_NAME
+import com.example.chapter5chalange.ui.fragment2.HomeFragment
+import com.example.chapter5chalange.ui.fragment2.HomeFragment.Companion.EXSTRA_NAME
 
 
 //
@@ -27,6 +29,7 @@ class ComFragment : Fragment(), ResultCallback {
 
     private var hasilPemainSatu = ""
     private var hasilPemainDua = ""
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,6 +63,7 @@ class ComFragment : Fragment(), ResultCallback {
             binding.comKertas
         )
 
+
         val logicGame = LogicGame(this)
         optuser.forEachIndexed { index, imageView ->
             imageView.setOnClickListener {
@@ -76,8 +80,22 @@ class ComFragment : Fragment(), ResultCallback {
             imageView.setOnClickListener {
                 hasilPemainDua = optLawan[index].contentDescription.toString()
                 Toast.makeText(context, "${hasilPemainDua.uppercase()}", Toast.LENGTH_SHORT).show()
-                optLawan.forEach { it.setBackgroundResource(android.R.color.transparent) }
-                optLawan[index].setBackgroundResource(R.drawable.bg_rounded)
+                if (hasilPemainSatu != "") {
+                    logicGame.identified(hasilPemainSatu, hasilPemainDua)
+                    optLawan.forEach { it.setBackgroundResource(android.R.color.transparent) }
+                    optLawan[index].setBackgroundResource(R.drawable.bg_rounded)
+
+
+                    val dialogFragment = DialogFragment()
+                    val fragmentManager = parentFragmentManager
+                    fragmentManager.beginTransaction().apply {
+                        replace(R.id.fm_3, dialogFragment, DialogFragment::class.java.simpleName)
+                        addToBackStack(null)
+                        commit()
+                    }
+
+                }
+
 
             }
         }
@@ -86,11 +104,23 @@ class ComFragment : Fragment(), ResultCallback {
     }
 
     override fun result(hasil: String) {
-
+        TODO("Not yet implemented")
     }
 
 
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
